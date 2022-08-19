@@ -13,9 +13,11 @@
 		45C778A528AFE78400FDA501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C778A328AFE78400FDA501 /* Main.storyboard */; };
 		45C778A728AFE78900FDA501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C778A628AFE78900FDA501 /* Assets.xcassets */; };
 		45C778AA28AFE78900FDA501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C778A828AFE78900FDA501 /* LaunchScreen.storyboard */; };
+		D02ECCE501521016E7BD725F /* Pods_Lesson_1_Valeriy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F45D62DCD8333483994455 /* Pods_Lesson_1_Valeriy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24F45D62DCD8333483994455 /* Pods_Lesson_1_Valeriy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lesson_1_Valeriy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C7789A28AFE78400FDA501 /* Lesson 1 Valeriy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson 1 Valeriy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C7789D28AFE78400FDA501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C7789F28AFE78400FDA501 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		45C778A628AFE78900FDA501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45C778A928AFE78900FDA501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45C778AB28AFE78900FDA501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C98BEDEB21B1AE91ACFBCB0 /* Pods-Lesson 1 Valeriy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson 1 Valeriy.debug.xcconfig"; path = "Target Support Files/Pods-Lesson 1 Valeriy/Pods-Lesson 1 Valeriy.debug.xcconfig"; sourceTree = "<group>"; };
+		91DF756E6BA6994AF0978D60 /* Pods-Lesson 1 Valeriy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson 1 Valeriy.release.xcconfig"; path = "Target Support Files/Pods-Lesson 1 Valeriy/Pods-Lesson 1 Valeriy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02ECCE501521016E7BD725F /* Pods_Lesson_1_Valeriy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BB730FBE0A96424F9EF777F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24F45D62DCD8333483994455 /* Pods_Lesson_1_Valeriy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		45C7789128AFE78400FDA501 = {
 			isa = PBXGroup;
 			children = (
 				45C7789C28AFE78400FDA501 /* Lesson 1 Valeriy */,
 				45C7789B28AFE78400FDA501 /* Products */,
+				C948CF100C394E99C3D558D6 /* Pods */,
+				3BB730FBE0A96424F9EF777F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "Lesson 1 Valeriy";
 			sourceTree = "<group>";
 		};
+		C948CF100C394E99C3D558D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C98BEDEB21B1AE91ACFBCB0 /* Pods-Lesson 1 Valeriy.debug.xcconfig */,
+				91DF756E6BA6994AF0978D60 /* Pods-Lesson 1 Valeriy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45C778AE28AFE78900FDA501 /* Build configuration list for PBXNativeTarget "Lesson 1 Valeriy" */;
 			buildPhases = (
+				660E0356FBE5ABF0B5B7766D /* [CP] Check Pods Manifest.lock */,
 				45C7789628AFE78400FDA501 /* Sources */,
 				45C7789728AFE78400FDA501 /* Frameworks */,
 				45C7789828AFE78400FDA501 /* Resources */,
+				1A47BBA7C4FD11C560F044B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A47BBA7C4FD11C560F044B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lesson 1 Valeriy/Pods-Lesson 1 Valeriy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lesson 1 Valeriy/Pods-Lesson 1 Valeriy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lesson 1 Valeriy/Pods-Lesson 1 Valeriy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		660E0356FBE5ABF0B5B7766D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lesson 1 Valeriy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45C7789628AFE78400FDA501 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		45C778AF28AFE78900FDA501 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C98BEDEB21B1AE91ACFBCB0 /* Pods-Lesson 1 Valeriy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		45C778B028AFE78900FDA501 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91DF756E6BA6994AF0978D60 /* Pods-Lesson 1 Valeriy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
